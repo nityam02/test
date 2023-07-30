@@ -1,0 +1,40 @@
+.component-top-header {
+  height: 80px;
+  padding: 0 100px;
+  box-shadow: 0 2px 12px 0 rgba(33, 36, 60, 0.08);
+  overflow: hidden;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-logo {
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+}
+
+.nav-links {
+  color: #000;
+  font-size: 12px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-top-header {
+    padding: 0 20px;
+  }
+}

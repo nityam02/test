@@ -1,0 +1,44 @@
+.imageContainer {
+  margin: 0 15px 0 0;
+  flex: 0 0 120px;
+}
+
+.imageHolder {
+  margin: 10px 0 0 0;
+  display: flex;
+  position: relative;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.imageHolder::-webkit-scrollbar {
+  display: none;
+}
+
+.border {
+  border: 1px solid;
+}
+.imageContainer {
+  margin: 0 15px 0 0;
+  flex: 0 0 120px;
+}
+
+.imageHolder {
+  margin: 10px 0 0 0;
+  display: flex;
+  position: relative;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.imageHolder::-webkit-scrollbar {
+  display: none;
+}
+
+.border {
+  border: 1px solid;
+}

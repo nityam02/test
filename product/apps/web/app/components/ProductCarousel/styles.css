@@ -1,0 +1,19 @@
+.product-list {
+  display: flex;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  margin: 0 -16px;
+  position: relative;
+}
+
+.product-list::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-list {
+    margin: 0;
+  }
+}

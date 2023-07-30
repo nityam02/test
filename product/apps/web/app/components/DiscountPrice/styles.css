@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30px;
+  height: 20px;
+  color: red;
+  background-color: rgb(255, 206, 206);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 5px 5px 5px 0px;
+}
+
+.price {
+  font-size: 12px;
+  text-decoration: line-through;
+  max-width: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #aab4c8;
+}

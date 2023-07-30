@@ -1,0 +1,36 @@
+.component-product {
+  padding: 80px 100px;
+  background: #f2f4f7;
+  position: relative;
+}
+.component-images-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-product {
+    padding: 0 20px;
+  }
+  .component-images-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.component-product {
+  padding: 80px 100px;
+  background: #f2f4f7;
+  position: relative;
+}
+.component-images-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-product {
+    padding: 0 20px;
+  }
+  .component-images-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

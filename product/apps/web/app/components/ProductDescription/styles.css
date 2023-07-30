@@ -1,0 +1,48 @@
+.productDesc {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.priceSection {
+  width: -webkit-fill-available;
+}
+
+.productPrice {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.flexCart {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 25px 15px 5px;
+}
+
+.descCont {
+  margin: 20px;
+  max-width: 350px;
+  width: 50%;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.keyStyles {
+  color: #8090ae;
+}
+
+.details {
+  color: green;
+  border-bottom: 1px solid green;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .descCont {
+    width: 100%;
+    margin-top: 40px;
+  }
+}

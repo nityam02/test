@@ -1,0 +1,39 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #888;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-card {
+    margin: 6px;
+  }
+}

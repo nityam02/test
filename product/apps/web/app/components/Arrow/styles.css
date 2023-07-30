@@ -1,0 +1,17 @@
+.arrowWrapper {
+  border-radius: 50%;
+  box-shadow: rgb(49 53 59 / 12%) 0px 1px 6px 0px;
+  border: 1px solid rgb(229, 231, 233);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  padding: 2px;
+  z-index: 2;
+}
+.arrowWrapper.left {
+  left: 0;
+}
+.arrowWrapper.right {
+  right: 0;
+}
