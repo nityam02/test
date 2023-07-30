@@ -11,13 +11,11 @@ import "./styles.css";
 import ImageCard from "./ImageCard";
 
 const ImageCarousel = ({ images }: { images: any }) => {
-  const { translate } = useTranslation();
   const [listContainerRef, handleArrowClick] = useArrowScroll();
   const [showArrows, setShowArrow] = useState({ left: false, right: true });
   const [currentImage, setCurrentImage] = useState(images[0]?.url_link);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const imageFeedRef = useRef(false);
+  const imageFeedRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (e) => {
     if (e.target.dataset.index && e.target.src) {

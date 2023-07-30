@@ -9,6 +9,9 @@ interface Product {
   name: string;
   price: number;
   image: string;
+  cart_image: string;
+  amount: string;
+  title: string;
 }
 
 interface ProductCardProps {
