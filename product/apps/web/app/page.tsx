@@ -2,14 +2,17 @@ import React from "react";
 
 import ProductDescription from "./components/ProductDescription";
 import ImageCarousel from "./components/ImageCarousel";
+import { Loader } from "ui";
 import loadable from "next/dynamic";
 import "../styles/main.css";
 
 export const dynamic = "force-dynamic";
+
 const ProductCarousel = loadable(() => import("./components/ProductCarousel"), {
-  loading: () => <>Loading!!</>,
+  loading: () => <Loader />,
   ssr: false,
 });
+
 interface Product {
   id: string;
   name: string;

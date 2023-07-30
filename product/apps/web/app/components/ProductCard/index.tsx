@@ -27,12 +27,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     img.src = img.dataset.src;
     delete img.dataset.src;
   }, options);
-
+  console.log("product", product);
   return (
     <div className="product-card">
       <img
         ref={targetRef}
-        src="https://img.icons8.com/ios/50/spinner-frame-2.png"
+        src="https://img.icons8.com/dusk/64/spinner-frame-2.png"
         data-src={product?.cart_image}
         alt={product?.title}
         className="product-image"

@@ -6,7 +6,7 @@ import "./styles.css";
 import ToogleSwitch from "../ToogleSwitch";
 
 const logo =
-  "https://cdn.pixabay.com/photo/2016/11/13/19/43/logo-1821863_640.png";
+  "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/09/29084448/secundo-logo-black.png";
 
 export const HeaderMain = () => {
   const { setLocale } = useTranslation();
