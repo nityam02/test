@@ -11,8 +11,8 @@ const logo =
 export const HeaderMain = () => {
   const { setLocale } = useTranslation();
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectLang = event?.target?.checked ? "no" : "en";
+  const handleLanguageChange = (language: string) => {
+    const selectLang = language;
     setLocale(selectLang);
   };
 
