@@ -30,7 +30,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     img.src = img.dataset.src;
     delete img.dataset.src;
   }, options);
-  console.log("product", product);
   return (
     <div className="product-card">
       <img
