@@ -1,5 +1,10 @@
 {
-    "hello": "Hello",
-    "welcome": "Welcome to Next.js",
-    "product_desc":"With powerful cleaning and precise design, the wiper kami will remove air, debris, and other dirt perfectly"
+    "product_desc":"With powerful cleaning and precise design, the wiper kami will remove air, debris, and other dirt perfectly",
+    "cat":"Category",
+    "attr":"Attributes",
+    "pr":"Price",
+    "hei":"Height",
+    "de":"Depth",
+    "be":"Breadth",
+    "google_review":"Google Review"
 }

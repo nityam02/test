@@ -3,8 +3,6 @@ import React from "react";
 import "./styles.css";
 import useTranslation from "../../hooks/useTranslation";
 
-import DiscountPrice from "../../components/DiscountPrice";
-
 const ProductDescription = ({ product }) => {
   const { translate } = useTranslation();
   const {
@@ -24,15 +22,15 @@ const ProductDescription = ({ product }) => {
     <div className="product">
       <h2>{name}</h2>
       <p>
-        <strong>Category:</strong> {category} - {subcategory}
+        <strong>{translate("cat")}:</strong> {category} - {subcategory}
       </p>
       <p>
-        <strong>Price:</strong> {selling_price} {currency}
+        <strong>{translate("pr")}</strong> {selling_price} {currency}
       </p>
       <p>{description}</p>
       {/* Product attributes */}
       <div className="product-attributes">
-        <h3>Attributes</h3>
+        <h3>{translate("attr")}</h3>
         <ul>
           {attributes.map(({ attribute, value }, index) => (
             <li key={index}>
@@ -45,7 +43,9 @@ const ProductDescription = ({ product }) => {
       {/* Google Review */}
       <div className="google-review">
         <h3>{google_review.text}</h3>
-        <p>Rating: {google_review.rate}</p>
+        <p>
+          {translate("google_review")}: {google_review.rate}
+        </p>
       </div>
     </div>
   );

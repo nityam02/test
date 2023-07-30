@@ -18,7 +18,7 @@ interface ProductCardProps {
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: 1.0,
+  threshold: 0.2,
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {

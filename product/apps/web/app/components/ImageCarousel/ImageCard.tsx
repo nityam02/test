@@ -10,7 +10,7 @@ interface Props {
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: 1.0,
+  threshold: 0.2,
 };
 const ImageCard = ({ active, index, imageSrc }: Props) => {
   const targetRef = useIntersect<HTMLImageElement>((entry) => {
