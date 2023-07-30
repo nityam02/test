@@ -1,22 +1,23 @@
-
-
 ### Apps and Packages
 
 - `msite`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `api`: common file for api calls
+- `classes`: Used singleton pattern for next js project
+- `common`: Contains common utlity functions
+- `components`: contains common component
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+To use the complete app,
 
-### Utilities
+git clone <url>
+pnpm i
+pnpm dev
 
-This Turborepo has some additional tools already setup for you:
+### Individual build run
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- pnpm --filter run dev
 
 ### Build
 
@@ -34,4 +35,5 @@ To develop all apps and packages, run the following command:
 ```
 cd my-turborepo
 pnpm dev
+
 ```

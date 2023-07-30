@@ -26,10 +26,6 @@
   padding: 0;
 }
 
-.product-attributes li {
-  margin-bottom: 5px;
-}
-
 .google-review {
   margin-top: 20px;
 }
@@ -42,4 +38,10 @@
 .google-review p {
   font-size: 16px;
   margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    margin-top: 35px;
+  }
 }
