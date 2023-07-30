@@ -10,7 +10,7 @@ interface Product {
   price: number;
   image: string;
   cart_image: string;
-  amount: string;
+  amount: number;
   title: string;
 }
 
