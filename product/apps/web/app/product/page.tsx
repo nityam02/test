@@ -25,9 +25,12 @@ interface Product {
 }
 
 export default async function Page() {
-  const data = await fetch(`http://0.0.0.0:3000/api/product/getById/1234`, {
-    cache: "no-cache",
-  });
+  const data = await fetch(
+    `https://test-93p3-la1ilaaxh-nityam02.vercel.app/api/product/getById/1234`,
+    {
+      cache: "no-cache",
+    }
+  );
   const result = await data.json();
   const {
     product,
