@@ -25,7 +25,7 @@ interface ProductDetailProps {
   product: Product;
 }
 
-const ProductDetail = async () => {
+export default async function Page() {
   const data = await fetch(`http://0.0.0.0:3000/api/product/getById/1234`, {
     cache: "no-cache",
   });
@@ -46,6 +46,4 @@ const ProductDetail = async () => {
       </div>
     </>
   );
-};
-
-export default ProductDetail;
+}
