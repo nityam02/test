@@ -42,7 +42,6 @@ const ProductDescription = ({ product }) => {
 
       {/* Google Review */}
       <div className="google-review">
-        <h3>{google_review.text}</h3>
         <p>
           {translate("google_review")}: {google_review.rate}
         </p>
