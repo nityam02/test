@@ -34,6 +34,9 @@ export default async function Page() {
     product,
     similar_product: { products },
   } = result;
+  if (!result) {
+    <></>;
+  }
   return (
     <>
       <div className="component-product">
