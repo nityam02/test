@@ -28,9 +28,7 @@ interface ProductDetailProps {
   product: Product;
 }
 
-const makeApiCall = () => {};
-
-export default async function ProductDetail() {
+export default async function Page() {
   const data = await fetch(`http://0.0.0.0:3000/api/product/getById/1234`, {
     cache: "no-cache",
   });
@@ -39,6 +37,7 @@ export default async function ProductDetail() {
     product,
     similar_product: { products },
   } = result;
+
   if (!result) {
     return <></>;
   }
