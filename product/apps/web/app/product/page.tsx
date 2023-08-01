@@ -24,10 +24,6 @@ interface Product {
   imageUrl: string;
 }
 
-interface ProductDetailProps {
-  product: Product;
-}
-
 export default async function Page() {
   const data = await fetch(`http://0.0.0.0:3000/api/product/getById/1234`, {
     cache: "no-cache",
