@@ -14,7 +14,7 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           <HeaderMain />
-          <ProductDetail />
+          {children}
         </I18nProvider>
       </body>
     </html>
