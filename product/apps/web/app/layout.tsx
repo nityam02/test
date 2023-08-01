@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/globals.css";
 import I18nProvider from "./context";
 import { HeaderMain } from "./components/Header";
+import ProductDetail from "./product/page";
 
 export default function RootLayout({
   children,
@@ -13,7 +14,7 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           <HeaderMain />
-          {children}
+          <ProductDetail />
         </I18nProvider>
       </body>
     </html>
